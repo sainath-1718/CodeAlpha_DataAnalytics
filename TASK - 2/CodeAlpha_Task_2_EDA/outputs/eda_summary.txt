@@ -1,0 +1,68 @@
+CODEALPHA TASK 2 — EXPLORATORY DATA ANALYSIS
+================================================
+
+1. DATASET OVERVIEW
+--------------------
+Number of rows: 20
+Number of columns: 5
+Column names: Book_Name, Price_GBP, Rating_Stars, Availability, Product_URL
+
+2. DATA TYPES
+------------
+Book_Name           str
+Price_GBP       float64
+Rating_Stars      int64
+Availability        str
+Product_URL         str
+
+3. DESCRIPTIVE STATISTICS
+--------------------------
+             count unique                                                                        top freq     mean        std    min      25%     50%     75%    max
+Book_Name       20     20                                                       A Light in the Attic    1      NaN        NaN    NaN      NaN     NaN     NaN    NaN
+Price_GBP     20.0    NaN                                                                        NaN  NaN  39.1805  14.603566  13.99  23.5725  44.235  51.865  57.25
+Rating_Stars  20.0    NaN                                                                        NaN  NaN      2.7   1.454575    1.0      1.0     3.0     4.0    5.0
+Availability    20      1                                                                   In stock   20      NaN        NaN    NaN      NaN     NaN     NaN    NaN
+Product_URL     20     20  https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html    1      NaN        NaN    NaN      NaN     NaN     NaN    NaN
+
+4. DATA QUALITY
+--------------
+Missing values per column:
+Book_Name       0
+Price_GBP       0
+Rating_Stars    0
+Availability    0
+Product_URL     0
+Duplicate rows: 0
+Duplicate product URLs: 0
+
+5. PRICE ANALYSIS (GBP)
+-----------------------
+Valid price values: 20
+Mean price: £39.18
+Median price: £44.23
+Minimum price: £13.99
+Maximum price: £57.25
+Standard deviation: £14.60
+Potential price outliers (1.5 × IQR rule): 0
+Highest-priced book: Our Band Could Be Your Life (£57.25)
+Lowest-priced book: Starving Hearts (£13.99)
+
+6. RATING DISTRIBUTION
+----------------------
+Rating_Stars
+1    6
+2    3
+3    5
+4    3
+5    3
+
+7. PRICE AND RATING RELATIONSHIP
+--------------------------------
+Pearson correlation: -0.095
+Interpretation: this measures linear association in this sample; it does not prove causation.
+
+8. CONCLUSION AND LIMITATIONS
+------------------------------
+The report summarizes the available scraped catalogue sample and flags basic data-quality issues.
+Potential outliers are review candidates, not automatically errors.
+The sample may not represent the complete book market. Conclusions should be limited to these records.

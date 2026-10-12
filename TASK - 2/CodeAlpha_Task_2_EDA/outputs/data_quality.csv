@@ -1,0 +1,6 @@
+﻿Column,Data_Type,Missing_Count,Missing_Percent,Unique_Values
+Book_Name,str,0,0.0,20
+Price_GBP,float64,0,0.0,20
+Rating_Stars,int64,0,0.0,5
+Availability,str,0,0.0,1
+Product_URL,str,0,0.0,20
